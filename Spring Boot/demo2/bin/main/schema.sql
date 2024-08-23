@@ -1,0 +1,10 @@
+DROP TABLE IF EXISTS user_info;
+
+CREATE TABLE user_info
+(
+	id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+ 	name VARCHAR(20) NOT NULL,
+ 	password VARCHAR(20) NOT NULL,
+ 	sex INT NOT NULL,
+ 	country INT NOT NULL
+);

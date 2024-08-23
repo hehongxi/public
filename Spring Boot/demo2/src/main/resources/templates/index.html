@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>主页</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body {
+            margin: 0;
+            height: 100vh; /* 确保背景填满整个视口高度 */
+            background: linear-gradient(to bottom, #e0f7ff, #b3e0ff);
+            font-family: Arial, sans-serif;
+            color: #fff;
+    }
+    /* Reset some basic styles for consistency across browsers */
+    body, h1, ul, li, table, th, td, form, div, label, input, select, button {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* General body styling */
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f4f4f4;
+        color: #333;
+        padding: 20px;
+    }
+
+    /* Header styling */
+    h1 {
+        font-size: 2em;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    /* List styling */
+    ul {
+        list-style: none;
+        margin-bottom: 20px;
+        padding-left: 0;
+    }
+
+    ul li {
+        margin-bottom: 10px;
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: #007BFF;
+        transition: color 0.3s;
+    }
+
+    ul li a:hover {
+        color: #0056b3;
+    }
+</style>
+</head>
+<body>
+    <h1>目录</h1>
+    <ul>
+        <li><a th:href="@{/add}">用户登录</a></li>
+        <li><a th:href="@{/show}">用户一览</a></li>
+    </ul>
+</body>
+</html>

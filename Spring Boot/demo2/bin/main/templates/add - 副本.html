@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+<title>用户登录</title>
+</head>
+<body>
+	<!-- ここでユーザ登録画面を作成してください -->
+		<h1>用户登录</h1>
+		<ul>
+		<li><a th:href="@{/index}">返回主页</a></li>
+		</ul>
+	<form th:action="@{/regist}" method="post">
+		<div>
+			<label for="name">名字:</label>
+			<input type="text" id="name" name="name" required />
+		</div>
+		<div>
+			<label for="password">密码:</label>
+			<input type="password" id="password" name="password" required />
+		</div>
+		<div>
+			<label>性別:</label>
+			<input type="radio" id="male" name="sex" value="0" />
+			<label for="male">男性</label>
+			<input type="radio" id="female" name="sex" value="1" />
+			<label for="female">女性</label>
+		</div>
+		<div>
+			<label for="country">国籍:</label>
+			<select id="country" name="country" required>
+				<option value="0">中国</option>
+				<option value="1">日本</option>
+			</select>
+		</div>
+		<div>
+			<button type="submit">登録</button>
+		</div>
+	</form>
+</body>
+</html>

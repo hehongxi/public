@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+<title>用户情报</title>
+</head>
+<body>
+	<!-- ここでユーザ情報一覧画面を作成してください -->
+		<h1>用户情报</h1>
+		<ul>
+		<li><a th:href="@{/index}">返回主页</a></li>
+		</ul>
+	<table border="1">
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>名字</th>
+				<th>性別</th>
+				<th>国籍</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="user : ${userList}">
+				<td th:text="${user.id}"></td>
+				<td th:text="${user.name}"></td>
+				<td th:text="${user.sex == 0 ? '女' : '男'}"></td>
+				<td th:text="${user.country == 0 ? '中国' : (user.country == 1 ? '日本' : (user.country == 2 ? '美国' : '法国'))}"></td>
+        </tr>
+		</tbody>
+	</table>
+</body> 
+</html>

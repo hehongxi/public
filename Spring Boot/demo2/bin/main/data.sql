@@ -1,0 +1,1 @@
+insert into user_info(name,password,sex,country) value('Anna','123',1,0);
