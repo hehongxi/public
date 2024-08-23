@@ -1,1 +1,5 @@
 #这个地方会放一些使用python写的代码。
+osero：由chatgpt写的黑白棋，看不太懂。
+jyannkenn_Fake:这是一个伪猜拳，没有石头剪刀布的克制关系，也不是基于条件判断的结果。
+  猜拳只有输，赢，平局，三种结果，直接随机输出就行了。
+jyannkenn_Fake_Window:利用chatgot基于jyannkenn_Fake的原理写的交互窗口的程序。
