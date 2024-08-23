@@ -1,0 +1,296 @@
+
+/* 清除浮动 */
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* 设置链接 */
+a {
+    text-decoration: none;
+}
+
+/* 设置列表 */
+ul, li {
+    list-style: none;
+}
+
+
+/* 版心 */
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    height: 42px;
+    margin: 30px auto;
+    /* background-color: #f99; */
+}
+
+h1{
+    float: left;
+}
+
+.header img{
+
+    height: 42px;
+}
+
+/* 导航 */
+.nav{
+    float: left;
+    margin-left: 34px;
+    height: 42px;
+    /* background-color: #99f; */
+}
+
+.nav ul{
+    height: 42px;
+}
+
+.nav ul li{
+    float: left;
+    margin-right: 20px;
+    line-height: 32px;
+}
+
+.nav ul li a{
+    display: block;
+    color: #000;
+    font-size: 18px;
+    height: 42px;
+    padding: 0 10px;
+    line-height: 42px;
+    border-bottom: 2px solid transparent; 
+    /*透明下划线 */
+    transition: border-bottom 0.3s ease; /* 过渡效果 */
+
+
+
+}
+
+.nav ul li a:hover{
+    border-bottom: 2px solid #00a4ff;
+}
+
+
+/* 搜索 */
+.search{
+    float: left;
+    width: 412px;
+    height: 42px;
+    margin-left: 83px;
+    border: 1px solid #00a4ff;
+
+}
+
+.search input{
+    float: left;
+    width: 360px;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+}
+
+.search input::placeholder{
+    font-size: 14px;
+    color: #bfbfbf;
+}
+
+.search button{
+    float: right;
+    width: 48px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    background-image: url(../images/search_cr23.svg);
+    background-color: #00a4ff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.user{
+    float: right;
+    height: 42px;
+    line-height: 42px;
+    margin-right: 35px;
+}
+
+.user img{
+    width: 42px;
+    border-radius: 50%;
+    margin-right: 17px;
+    /*vertical-align: middle;使图片和行内文字居中*/
+    vertical-align: middle;
+
+}
+
+.user span{
+    height: 42px;
+    line-height: 42px;
+}
+
+.banner{
+    height: 420px;
+    background-color: #1c036c;
+}
+
+
+.banner .wrapper{
+    height: 420px;
+    background-image: url(../images/AI-system.jpg);
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-size: cover;
+    background-position: center -168px; 
+}
+
+.banner .left{
+    float: left;
+    width: 190px;
+    height: 100%;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+/* 链接上下间距 */
+.banner .left li{
+    display: block;
+    line-height: 40px;
+}
+
+
+
+
+.banner li a{
+    display:block;
+    line-height: 40px;
+    color: aliceblue;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    transition:border-bottom .3s ease;
+}
+
+/* 悬停变色 */
+.banner li a:hover{
+    border-bottom: 1px solid #00b4ff;
+    color: #00b4ff;
+}
+
+
+.banner .left a::after{
+    content: ">";
+    float: right; 
+    line-height: 40px;  
+}
+
+
+.banner .right{
+    float: right;
+    width: 228px;
+    height: 300px;
+    border-radius: 5px;
+    margin-top: 50px;
+    background-color: #fff;
+}
+/* news style */
+.banner .right h2{
+    border-radius: 5px;
+    height: 48px;
+    background-color: #9bceea;
+    text-align: center;
+    line-height: 48px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.banner .right .content{
+    padding: 0 18px;
+}
+
+.banner .right .content dl{
+    padding: 12px 0;
+    border-bottom: 2px solid ;
+    color: #4e4e4e;
+}
+
+.banner .right .content dt{
+    font-size: 16px;
+    /* text-align: center; */
+    
+}
+
+.banner .right .content dd{
+    font-size: 14px;
+}
+
+.banner .right .morecontent{
+    display: block;
+    width: 200px;
+    height: 40px;
+    margin: 4px auto 0;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid #00a4ff;
+    font-size: 14px;
+    color: #00a4ff;
+    font-weight: 700;
+}   
+
+
+/* business */
+.business{
+    margin-top: 8px;
+    height: 60px;
+    background-color: #fff;
+    box-shadow: 0px 2px 3px 0px rgba(118, 118, 118, 0.5);
+}
+
+.business h2{
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #00a4ff;
+    padding-left: 20px;
+    padding-right: 10px;
+
+}
+
+.business ul{
+    float: left;
+    height: 60px;
+}
+
+.business ul li{
+    float: left;
+    height: 60px;
+    padding: 0 15px;
+    line-height: 60px;
+    font-size: 14px;
+    
+}
+
+.business ul li a{
+    text-align: center;
+    font-size: 14px;
+    padding-left: 10px;
+    border-left:1px solid #00a4ff ;
+    line-height: 40px;
+
+}
+
+
+.business .morebusiness{
+    float: right;
+    line-height: 60px;
+    margin-right: 20px;
+    font-size: 18px;
+    color: #00a4ff;
+    font-weight: 700;
+}
+
